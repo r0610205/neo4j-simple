@@ -4,7 +4,9 @@
   "description": "Simple nodes, relations, queries.",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,12 +38,14 @@
     "joi": "^6.5.0",
     "node-uuid": "^1.4.3",
     "rainbird-neo4j": "^0.4.3",
-    "thenify-all": "^1.6.0"
+    "thenify-all": "^1.6.0",
+    "snyk": "^1.25.0"
   },
   "devDependencies": {
     "jshint": "latest",
     "chai": "^2.1.2",
     "mocha": "^2.2.1",
     "sinon": "^1.14.1"
-  }
+  },
+  "snyk": true
 }
