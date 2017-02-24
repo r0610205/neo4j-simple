@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:request:20160119':
+    - rainbird-neo4j > request:
+        patched: '2017-02-17T17:32:42.815Z'
+  'npm:tough-cookie:20160722':
+    - rainbird-neo4j > request > tough-cookie:
+        patched: '2017-02-17T17:32:42.815Z'
